@@ -29,8 +29,11 @@ VALUES (7, 'Arghyajyoti', 'Samui', 'Software Developer', 90000.00);
 
 select * from employees;
 
-
-create or replace view high_salary_employees as
-select * from employees where salary = (select max(salary) from employees);
+create view high_salary_employees as
+select * from employees where salary > 50000;
 
 select * from high_salary_employees;
+
+update high_salary_employees
+set salary = 100000 
+where employee_id = 7;
