@@ -1,7 +1,8 @@
--- Basic Ranking
--- Create a table named Scores with columns StudentID and Score.
--- Insert records representing different students and their scores.
--- Write a query to rank students based on their scores using the RANK() function.
+-- Dense Ranking with Ties
+-- Extend the Scores table with a new column Subject.
+-- Insert records with varying scores for the same student in different subjects.
+-- Write a query to calculate the dense rank of students within each subject using the DENSE_RANK() function.
+
 
 drop table Scores;
 create table Scores (
