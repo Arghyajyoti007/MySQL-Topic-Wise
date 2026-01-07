@@ -39,3 +39,8 @@ select student_id, fullname, score, Department, year_record, max(score)
 over (partition by year_record) as max_score_yearly
 from students;
 
+-- Using Group By
+select year_record, max(score) from Students
+group by year_record
+order by year_record;
+
