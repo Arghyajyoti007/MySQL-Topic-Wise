@@ -1,62 +1,45 @@
-# MySQL Practice Questions & Answers (Chapter-Wise)
+# 📘 MySQL Complete Guide & Interview Preparation
 
-A structured collection of **MySQL practice questions with answers**, organized chapter-wise.  
-Useful for **beginners, interview preparation, exams, and hands-on SQL practice**.
-
----
-
-## 📘 Chapter 1: MySQL Basics
-
-**Q1. What is MySQL?**  
-**A:** MySQL is an open-source Relational Database Management System (RDBMS) that uses SQL to manage data.
-
-**Q2. What is a database?**  
-**A:** A structured collection of data stored electronically and managed using a DBMS.
-
-**Q3. Difference between SQL and MySQL?**  
-- **SQL** → Query language  
-- **MySQL** → Database system that uses SQL
-
-**Q4. What are tables?**  
-**A:** Tables store data in rows and columns.
+Welcome to the **MySQL Complete Guide** repository 🚀  
+This repository is designed to be a **one-stop reference** for learning MySQL from **basics to advanced concepts**, along with **important interview questions**, **clear explanations**, and **practical SQL code examples**.
 
 ---
 
-## 📘 Chapter 2: Data Types
-
-**Q1. Common MySQL data types?**  
-- **Numeric:** `INT`, `FLOAT`, `DECIMAL`  
-- **String:** `VARCHAR`, `CHAR`, `TEXT`  
-- **Date/Time:** `DATE`, `DATETIME`, `TIMESTAMP`
-
-**Q2. Difference between CHAR and VARCHAR?**  
-- `CHAR` → Fixed length  
-- `VARCHAR` → Variable length (memory efficient)
+## 📌 Table of Contents
+- [Introduction to MySQL](#introduction-to-mysql)
+- [Database & Table Basics](#database--table-basics)
+- [Data Types](#data-types)
+- [CRUD Operations](#crud-operations)
+- [Constraints](#constraints)
+- [Keys in MySQL](#keys-in-mysql)
+- [Operators](#operators)
+- [Joins](#joins)
+- [Functions](#functions)
+- [Indexes](#indexes)
+- [Views](#views)
+- [Stored Procedures & Functions](#stored-procedures--functions)
+- [Triggers](#triggers)
+- [Transactions](#transactions)
+- [Normalization](#normalization)
+- [Performance & Optimization](#performance--optimization)
+- [Important Interview Questions](#important-interview-questions)
 
 ---
 
-## 📘 Chapter 3: DDL (Data Definition Language)
+## Introduction to MySQL
 
-**Q1. Create a table**
+**MySQL** is an open-source **Relational Database Management System (RDBMS)** that uses **Structured Query Language (SQL)** to manage data.
+
+### Key Features
+- Open Source
+- High Performance
+- Scalable & Secure
+- Cross-platform support
+
+---
+
+## Database & Table Basics
+
+### Create Database
 ```sql
-CREATE TABLE users (
-  id INT PRIMARY KEY AUTO_INCREMENT,
-  name VARCHAR(100),
-  email VARCHAR(100)
-);
-```
-## 📘 Chapter 3: DDL (Data Definition Language)
-
-**Q2. DROP vs TRUNCATE?**
-
-- `DROP` → Deletes table structure and data  
-- `TRUNCATE` → Deletes all data (faster)
-
-**Q3. Add a column**
-```sql
-ALTER TABLE users ADD age INT;
-```
-
-
-WIP
-
+CREATE DATABASE company_db;
