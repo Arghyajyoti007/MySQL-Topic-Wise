@@ -1,0 +1,39 @@
+-- This is the same question as problem #1 in the SQL Chapter of Ace the Data Science Interview!
+
+-- Assume you have an events table on Facebook app analytics. Write a query to calculate the click-through rate (CTR) for the app in 2022 and round the results to 2 decimal places.
+
+-- Definition and note:
+
+-- Percentage of click-through rate (CTR) = 100.0 * Number of clicks / Number of impressions
+-- To avoid integer division, multiply the CTR by 100.0, not 100.
+-- events Table:
+-- Column Name	Type
+-- app_id	integer
+-- event_type	string
+-- timestamp	datetime
+-- events Example Input:
+-- app_id	event_type	timestamp
+-- 123	impression	07/18/2022 11:36:12
+-- 123	impression	07/18/2022 11:37:12
+-- 123	click	07/18/2022 11:37:42
+-- 234	impression	07/18/2022 14:15:12
+-- 234	click	07/18/2022 14:16:12
+-- Example Output:
+-- app_id	ctr
+-- 123	50.00
+-- 234	100.00
+
+-- https://datalemur.com/questions/click-through-rate
+
+SELECT 
+app_id,
+  round(100.0 * 
+    sum(case when event_type = 'click' then 1 else 0 end) 
+    /
+    sum(case when event_type = 'impression' then 1 else 0 end) 
+    ,
+    2
+  ) as ctr
+FROM events
+where timestamp >= '2022-01-01' AND timestamp < '2023-01-01'
+group by app_id ;
