@@ -1,7 +1,7 @@
 # 📘 MySQL Complete Guide & Interview Preparation
 
 Welcome to the **MySQL Complete Guide** repository 🚀  
-This repository is designed to be a **one-stop reference** for learning MySQL from **basics to advanced concepts**, along with **important interview questions**, **clear explanations**, and **practical SQL code examples**.
+This repository is designed to be a **one-stop reference** for learning MySQL from **basics to advanced concepts**, along with **important interview questions**, **clear explanations**, and **practical SQL code examples**. 
 
 ---
 
