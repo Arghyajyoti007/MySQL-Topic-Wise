@@ -1,7 +1,7 @@
 -- 1321. Restaurant Growth
 -- https://leetcode.com/problems/restaurant-growth/description/?envType=study-plan-v2&envId=top-sql-50
 /*
-Table: Customer
+Table: Customer   
 
 +---------------+---------+
 | Column Name   | Type    |
